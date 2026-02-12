@@ -143,7 +143,7 @@ abstract class AbstractEntity
     {
         return $this->client->sendRequest(
             $this->preparePath(
-                "$this->modelName/create",
+                "$this->modelName/update",
                 ['id' => $entityId]
             ),
             $updateData
